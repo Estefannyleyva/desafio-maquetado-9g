@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+nav img {
+    margin-left: 30px;
+    align-self: center;
+}
+
+nav .hamburger-wrapper {
+    margin-right: 30px;
+    align-self: center;
+    width:50px;
+    height:50px;
+    border-style: none;
+    display:flex;
+    align-items: center;
+}
+
+nav .hamburger-icon{
+    border:2px solid black;
+    border-radius:3px;
+    width:40px;
+    height:4px;
+    background:black;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    box-shadow: 0px 9px 0px black, 0px -9px 0px black;
+}
+
+nav .lista {
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 60%;
+}
+
+nav .lista a {
+    display: none;
+    padding: 15px;
+    text-decoration: none;
+    color:gray
+}
+
+nav .sign-up {
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 20%;
+}
+
+nav .sign-up a {
+    display: none;
+    padding-right: 35px;
+    text-decoration: none;
+    color: gray
+}
+
+nav .sign-up button {
+    display:none;
+    text-align: center;
+    justify-content: center;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    height: 45px;
+    width: 125px;
+    border-style: none;
+    border-radius: 25px 25px;
+}
+
+.title-sub{
+    justify-content: space-between;
+}
+.title-sub h1{
+    margin: auto;
+    display: block;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 35px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+.title-sub p{
+    margin: auto;
+    display: block;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: darkgray;
+    font-size: 17px;  
+}
+.title-sub button{
+    text-align: center;
+    justify-content: center;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    height: 50px;
+    width: 160px;
+    border-style: none;
+    border-radius: 25px 25px;
+    margin: auto;
+    display: block;
+}
+.working {
+   width: 100%;
+}
+.working img{
+    width: 150%;
+    height: auto;
+    padding-left: 35px;
+}
+.inp-im{
+   width: 90%;
+   height: 170px;
+   margin-right: 5%;
+   margin-left: 5%;
+   background-image: url("/img/bg-shorten-mobile.svg");
+   background-repeat: no-repeat;
+   background-color: hsl(255, 11%, 22%);
+   background-size: auto;
+   background-position: right;
+   background-position-y: top;
+   align-items: center;
+   border-radius: 8px;
+}
+.inp-im input{
+   width: 90%;
+   height: 55px;
+   margin-top: 20px;
+   border-radius: 8px;
+   margin-left: 5%;
+   margin-right: 5%;
+   justify-content: center;
+   outline: none;
+}
+.inp-im button{
+   margin-top: 20px;
+   text-align: center;
+   justify-content: center;
+   background-color: hsl(180, 66%, 49%);
+   color: white;
+   height: 55px;
+   width: 90%;
+   border-style: none;
+   border-radius: 8px 8px;
+   margin-left: 5%;
+   margin-right: 5%;
+   display: block;
+}
