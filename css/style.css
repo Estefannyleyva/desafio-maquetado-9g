@@ -107,6 +107,10 @@ nav .sign-up button {
     border-radius: 25px 25px;
 }
 
+.sub-ti {
+    padding-bottom: 100px;
+}
+
 .title-sub{
     justify-content: space-between;
 }
@@ -121,7 +125,7 @@ nav .sign-up button {
     line-height: 1;
     letter-spacing: -1px;
 }
-.title-sub p{
+.title-sub p {
     margin: auto;
     display: block;
     padding-right: 30px;
@@ -154,6 +158,9 @@ nav .sign-up button {
 }
 
 .inp-im {
+    position: absolute;
+    top: 73%;
+    z-index:1;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -162,7 +169,7 @@ nav .sign-up button {
     height: auto;
     margin-right: 3%;
     margin-left: 3%;
-    background-image: url("/img/bg-shorten-mobile.svg");
+    background-image: url(/img/bg-shorten-mobile.svg);
     background-repeat: no-repeat;
     background-color: hsl(255, 11%, 22%);
     background-size: 100% 100%;
@@ -211,7 +218,7 @@ section {
 
 .heading {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
 }
 
@@ -375,4 +382,76 @@ li{
     display: flex;
     justify-content: space-evenly;
     width: 250px;
+}
+
+
+/* ------------------------------------------ */
+/* RESPONSIVIDAD */
+
+/*
+    position: absolute;
+    top: 73%;
+    z-index:1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin-right: 3%;
+    margin-left: 3%;
+    background-image: url(/img/bg-shorten-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(255, 11%, 22%);
+    background-size: 100% 100%;
+    background-position: right;
+    background-position-y: top;
+    border-radius: 8px;
+*/
+
+
+@media only screen and (min-width:376px) {
+    .inp-im {
+        position: absolute;
+        top: 90%;
+        z-index: 1;
+        display: inline-flex;
+        width: 90%;
+        height: 170px;
+        margin-right: 5%;
+        margin-left: 5%;
+        background-image: url("/img/bg-shorten-desktop.svg");
+        background-repeat: no-repeat;
+        background-color: hsl(260, 8%, 14%);
+        background-size: auto;
+        background-position: right;
+        background-position-y: top;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    .inp-im input{
+        width: 70%;
+        height: 55px;
+        margin-top: 20px;
+        border-radius: 8px;
+        margin-left: 5%;
+        margin-right: 5%;
+        justify-items: center;
+        outline: none;
+    }
+
+    .inp-im button{
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        background-color: hsl(180, 66%, 49%);
+        color: white;
+        height: 55px;
+        width: 20%;
+        border-style: none;
+        border-radius: 8px 8px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
