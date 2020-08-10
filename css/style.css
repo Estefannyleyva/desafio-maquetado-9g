@@ -7,6 +7,7 @@
         letter-spacing: -1px;
         margin: 0;
         padding: 0;
+        transition: all .4s ease;
     }
 
 /* MOBILE */
@@ -63,33 +64,6 @@
         left: 4%;
     }
 
-    nav .hamburger-wrapper {
-        position: relative;
-        display: flex;
-        right: 5%;
-        align-items: center;
-        height: 40px;
-        border-style: none;
-        width: 100%;
-        max-width: 25px;
-    }
-
-    nav .hamburger-icon{
-        border:2px solid gray;
-        border-radius:3px;
-        width:30px;
-        height:4px;
-        background:gray;
-        display: block;
-        margin-left: auto;
-        margin-right:auto;
-        box-shadow: 0px 9px 0px gray, 0px -9px 0px gray;
-    }
-
-    .hamburger-wrapper:hover{
-        cursor: pointer;
-    }
-
     nav .lista {
         display:none;
     }
@@ -108,6 +82,112 @@
 
     nav .sign-up button {
         display:none;
+    }
+
+    /* MENU HAMBURGUESA */
+
+    .hamburger-wrapper {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        border-style: none;
+        width: 100%;
+        max-width: 25px;
+        margin: 2em;
+    }
+
+    .hamburger-icon {
+        border:2px solid gray;
+        border-radius:3px;
+        width:30px;
+        height:4px;
+        background:gray;
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+        box-shadow: 0px 9px 0px gray, 0px -9px 0px gray;
+    }
+
+    .hamburger-wrapper + input{
+        display:none;
+    }
+    
+    .hamburger-wrapper:hover{
+         cursor:pointer;
+    }
+
+    .nav-wrapper {
+        position: absolute;
+        top: 70%;
+        width: 90%;
+        z-index: 1;
+        display: flex;
+        max-height: 0px;
+        list-style: none;
+        padding: 0;
+        background-color: hsl(257, 27%, 26%);
+        border-radius: 3%;
+        overflow:hidden;
+        transition: max-height .3s ease;
+    }
+    
+    .nav-wrapper a {
+        margin: 0;
+        padding: 20px;
+        transition: all .4s ease;
+        font-weight: 600;
+        color: white;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 0px;
+    }
+
+    #hamburger-input:checked + .nav-wrapper {
+        max-height: 1200px;
+    }
+    .nav-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        list-style: none;
+        padding-right: 1em;
+        padding-left: 1em;
+        text-align: center;
+        border-radius: 10px;
+        margin: 1em 2em 1em 1.5em;
+    }
+
+    .nav-wrapper a {
+        padding: 2em 0px 1em 0px;
+        height: 45px;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        color: white;
+    }
+
+    .nav-wrapper a:hover {
+        color:cyan;
+    }
+
+    .nav-wrapper hr {
+        border: 1px solid darkgray;
+        opacity: 50%;
+        margin-top: 2em;
+    }
+    .nav-wrapper button {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    .nav-wrapper button:hover {
+        background-color: darkcyan;
     }
 
     /* HEADER BANNER > ENCABEZADO */
@@ -447,17 +527,126 @@
         top: 35%;
         margin-left: 30px;
         align-self: center;
-        height: 100px;
     }
 
+    /* MENU HAMBURGUESA */
+
     nav .hamburger-wrapper {
-        display:none;
+        display: none;
+        align-items: center;
+        height: 40px;
+        border-style: none;
+        width: 100%;
+        max-width: 25px;
+        margin: 2em;
     }
 
     nav .hamburger-icon {
-        display:none;
+        display: none;
+        border:2px solid gray;
+        border-radius:3px;
+        width:30px;
+        height:4px;
+        background:gray;
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+        box-shadow: 0px 9px 0px gray, 0px -9px 0px gray;
     }
 
+    .hamburger-wrapper + input{
+        display:none;
+    }
+    
+    .hamburger-wrapper:hover{
+        display: hidden;
+        cursor: pointer;
+    }
+
+    .nav-wrapper {
+        display: hidden;
+        position: absolute;
+        top: 70%;
+        width: 90%;
+        z-index: 1;
+        display: flex;
+        max-height: 0px;
+        list-style: none;
+        padding: 0;
+        background-color: hsl(257, 27%, 26%);
+        border-radius: 3%;
+        overflow:hidden;
+        transition: max-height .3s ease;
+    }
+    
+    .nav-wrapper a {
+        display: hidden;
+        margin: 0;
+        padding: 20px;
+        transition: all .4s ease;
+        font-weight: 600;
+        color: white;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 0px;
+    }
+
+    #hamburger-input:checked + .nav-wrapper {
+        display: hidden;
+        max-height: 1200px;
+    }
+    .nav-wrapper {
+        display: hidden;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        list-style: none;
+        padding-right: 1em;
+        padding-left: 1em;
+        text-align: center;
+        border-radius: 10px;
+        margin: 1em 2em 1em 1.5em;
+    }
+
+    .nav-wrapper a {
+        display: hidden;
+        padding: 2em 0px 1em 0px;
+        height: 45px;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        color: white;
+    }
+
+    .nav-wrapper a:hover {
+        display: hidden;
+        color:cyan;
+    }
+
+    .nav-wrapper hr {
+        display: hidden;
+        border: 1px solid darkgray;
+        opacity: 50%;
+        margin-top: 2em;
+    }
+    .nav-wrapper button {
+        display: hidden;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    .nav-wrapper button:hover {
+        display: hidden;
+        background-color: darkcyan;
+    }
+
+/* MENU PRINCIPAL */
     nav .lista {
         display: flex;
         justify-content: flex-start;
@@ -767,13 +956,14 @@
 
     /* FOOTER */
 
-    footer{
+    footer {
         background: #1D1D1D;
-        color: white;
+        position: relative;
         display: flex;
+        color: white;
         flex-direction: row;
-        align-items: flex-start;
         justify-content: space-between;
+        align-items: flex-start;
         padding: 50px 0px 50px 0px;
         width: 100%;
         height: 500px;
@@ -787,7 +977,8 @@
         display: flex;
         position: relative;
         align-items: flex-start;
-        margin-left: 9em;
+        margin-left: 7em;
+    
     }
 
     .article-container{
@@ -811,23 +1002,26 @@
     }
 
     .redes {
-        display: flex;
-        justify-content: space-evenly;
+        display: inline-block;
         position: relative;
-        width: 240px;
+        width: 200px;
         height: auto;
+        align-self: flex-start;
         cursor: pointer;
-        align-items: center;
-        margin-right: 2em;
-        right: 7%;
+        right: 2%;
+        margin-right: 1em;
     }
 
     .redes svg {
         position: relative;
         cursor: pointer;
+        margin-left: 1em;
+    }
+
+    .redes svg:hover, .redes svg:focus {
+        fill:cyan;
     }
 
 }
 
-/* ------------------ MENUS ------------------------ */
-
+/* ------------------ SHORTEN ACTIVE ------------------------ */
