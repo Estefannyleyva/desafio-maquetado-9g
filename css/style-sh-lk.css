@@ -10,69 +10,6 @@
     transition: all .4s ease;
 }
 
-.shorten-button {
-    position:relative;
-    display: flex;
-    align-items: center;
-    height: 40px;
-    border-style: none;
-    width: 100%;
-    margin: 2em;
-}
-
-.shorten-copy {
-    display:flex;
-    margin: 0;
-    text-align: center;
-    justify-content: center;
-    background-color: hsl(180, 66%, 49%);
-    color: white;
-    height: 55px;
-    width: 20%;
-    border-style: none;
-    border-radius: 8px 8px;
-    margin-right: 4%;
-    cursor: pointer;
-}
-
-.shorten-copy h3 {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    letter-spacing: 0;
-}
-
-.shorten-button + input {
-    display:none;
-}
-
-.shorten-button:hover {
-     cursor:pointer;
-     background-color:rgb(11, 199, 199);
-}
-
-#drop {
-    display:none;
-}
-
-.option-im-drop {
-    position: absolute;
-    max-height: 0;
-    margin: 0;
-    padding: 20px;
-    transition: all .4s ease;
-    font-weight: 500;
-    color: white;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 0px;
-}
-
-#shorten-input:checked + #drop {
-    max-height: 1000px;
-}
-
 .option-im-drop {
     position: relative;
     display: flex;
