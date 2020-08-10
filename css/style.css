@@ -62,6 +62,7 @@
         position: relative;
         align-self: center;
         left: 4%;
+        cursor: pointer;
     }
 
     nav .lista {
@@ -146,6 +147,7 @@
     #hamburger-input:checked + .nav-wrapper {
         max-height: 1200px;
     }
+    
     .nav-wrapper {
         display: flex;
         flex-direction: column;
@@ -527,6 +529,7 @@
         top: 35%;
         margin-left: 30px;
         align-self: center;
+        cursor: pointer;
     }
 
     /* MENU HAMBURGUESA */
@@ -971,6 +974,7 @@
 
     .logo-footer svg {
         margin-left: 10em;
+        cursor: pointer;
     }
 
     .menu-footer {
@@ -1018,9 +1022,8 @@
         margin-left: 1em;
     }
 
-    .redes svg:hover, .redes svg:focus {
-        fill:cyan;
-    }
+
+
 
 }
 
